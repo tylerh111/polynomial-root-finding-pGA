@@ -7,8 +7,8 @@
 #include "Individual.h"
 class Individual;
 
+
 class Population {
-    //friend class Individual;
 private:
     Individual** _population;
     int _population_size;
@@ -25,17 +25,17 @@ public:
     ~Population();
 
     //Genetic operators
-    Individual& select();
-    //Individual crossover(Individual& x1, Individual& x2)[2];
-    void mutate(Individual& x);
-    void replace(Population& replacement);
+    //Individual& select();
+    //Individual* crossover(Individual& x1, Individual& x2);
+    //void mutate(Individual& x);
+    //void replace(Population& replacement);
 
     //double getFitness(Individual& x);
 
     void fitPopulation();
 
 
-    void sort();
+    //void sort();
 
     //Operators
     Individual& operator[] (int ndx);

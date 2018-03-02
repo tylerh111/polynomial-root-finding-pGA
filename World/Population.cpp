@@ -30,14 +30,6 @@ Population::~Population() {
 
 
 
-/*
-Individual Population::crossover(Individual& x1, Individual &x2)[2] {
-    Individual arr[2] = {x1, x2};
-    return (Individual[2])(arr);
-}
-*/
-
-
 
 
 void Population::fitPopulation(){
@@ -49,8 +41,10 @@ void Population::fitPopulation(){
 
 
 
+
 Individual& Population::operator[] (int ndx){
     return *_population[ndx];
 }
+
 
 
